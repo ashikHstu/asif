@@ -1,355 +1,382 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 
-    <style>
-
-    .container{
-        margin: 15px;
+  <style>
+    .container {
+      margin: 15px;
     }
 
-    .card{
-        margin: 15px;
+    .card {
+      margin: 15px;
     }
-    </style>
+  </style>
 
-    <title>Ashikur Rahman Bhuyain</title>
-  </head>
+  <title>Ashikur Rahman Bhuyain</title>
+</head>
 
-  
-  <body>
 
-    <!-- adding Navigationbar -->
+<body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Ashikur Rahman Bhuyain</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+  <!-- adding Navigationbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Ashikur Rahman Bhuyain</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="#programs">Programs
+            </a>
+          </li>
+
+          <li class="nav-item">
+
+            <a class="nav-link" href="#education">Education
+            </a>
+          </li>
+
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Competitive Programming
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">ICPC Dhaka Regional</a></li>
+              <li><a class="dropdown-item" href="#">Codeforces</a></li>
+              <li><a class="dropdown-item" href="#">UVa Online Judge</a></li>
+
+              <li>
+                <hr class="dropdown-divider">HSTU Related
               </li>
-             
-             
-              <li class="nav-item">
-                <a class="nav-link" href="#programs">Programs
-                </a>
-              </li>
-             
-              <li class="nav-item">
-               
-                <a class="nav-link" href="#education">Education
-                </a>
-              </li>
-
-             
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Competitive Programming
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">ICPC Dhaka Regional</a></li>
-                  <li><a class="dropdown-item" href="#">Codeforces</a></li>
-                  <li><a class="dropdown-item" href="#">UVa Online Judge</a></li>
-             
-                  <li><hr class="dropdown-divider">HSTU Related</li>
-                  <li><a class="dropdown-item" href="#">Intra HSTU Programming Contests</a></li>
-                  <li><a class="dropdown-item" href="#">Intra online contests</a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item">
-               
-                <a class="nav-link" href="#contact">Contact
-                </a>
-              </li>
-              
+              <li><a class="dropdown-item" href="#">Intra HSTU Programming Contests</a></li>
+              <li><a class="dropdown-item" href="#">Intra online contests</a></li>
             </ul>
-            <!-- <form class="d-flex">
+          </li>
+
+          <li class="nav-item">
+
+            <a class="nav-link" href="#contact">Contact
+            </a>
+          </li>
+
+        </ul>
+        <!-- <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form> -->
-          </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Image Slider -->
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="cover1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="cover2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="cover3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- This is Jumbotron container -->
+
+  <div class="container">
+
+
+    <div class="jumbotron">
+
+      <h1 class="display-3">
+        Welcome to My WebSite. Greeting from Ashik..
+      </h1>
+
+      <p class="lead">Competitive Programmer, Android developer, Web Developer.
+
+      </p>
+
+      <hr class="my-4">
+
+      <p>
+        I am a curious competitive programmer. Maybe i found the meaning of life from programming. It accepted me when i
+        had nothing.
+        programming is not just programming, it means a lot to me.
+      </p>
+
+      <p>
+        If i want to speak about professional work, i had done some android app also using java. they added some color
+        in my coding life.
+        but still i am in love with competitive programming. I have done some JavaScript simple project also. and
+        webdesign added another
+        color. But competitive programming is still my unconditional love.
+      </p>
+
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/asif-ashik/" role="button"
+          target="_blank">Learn More from
+          linkedin...</a>
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- Projects and Special qualificaitons -->
+
+  <div class="container" id="programs">
+    <div class="card-group">
+      <div class="card">
+        <img src="project1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Competitive Programming</h5>
+          <p class="card-text">I was introdued with Competitive Programming in Level-1, Semester-I. Competitive
+            Programming accepted me when i had nothing. it gives me confidence in every sector whereever i tried.</p>
         </div>
-      </nav>
-
-      <!-- Image Slider -->
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div class="card-footer">
+          <small class="text-muted">Last updated more than 300 mins ago</small>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="cover1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="cover2.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="cover3.jpg" class="d-block w-100" alt="...">
-          </div>
+      </div>
+      <div class="card">
+        <img src="project2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Android Application</h5>
+          <p class="card-text">First time i did android application in level-2, Semester-II. It was needed for academic
+            puspose. It added some beautiful color in my coding life.</p>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-
-      <!-- This is Jumbotron container -->
-
-      <div class="container">
-       
-
-        <div class="jumbotron" >
-
-            <h1 class="display-3">
-                Welcome to My WebSite. Greeting from Ashik..
-            </h1>
-
-            <p class="lead">Competitive Programmer, Android developer, Web Developer.
-
-            </p>
-
-            <hr class="my-4"> 
-
-            <p>
-                I am a curious competitive programmer. Maybe i found the meaning of life from programming. It accepted me when i had nothing. 
-                programming is not just programming, it means a lot to me. 
-            </p>
-
-            <p>
-                If i want to speak about professional work, i had done some android app also using java. they added some color in my coding life.
-                but still i am in love with competitive programming. I have done some JavaScript simple project also. and webdesign added another 
-                color. But competitive programming is still my unconditional love.
-            </p>
-
-            <p class="lead">
-                  <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/asif-ashik/" role="button" >Learn More from linkedin...</a>
-            </p>
-
+        <div class="card-footer">
+          <small class="text-muted">Last updated more than 300 mins ago</small>
         </div>
-
       </div>
-
-
-      <!-- Projects and Special qualificaitons -->
-
-      <div class="container" id="programs">
-        <div class="card-group">
-            <div class="card" >
-              <img src="project1.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Competitive Programming</h5>
-                <p class="card-text">I was introdued with Competitive Programming in Level-1, Semester-I. Competitive Programming accepted me when i had nothing. it gives me confidence in every sector whereever i tried.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated more than 300 mins ago</small>
-              </div>
-            </div>
-            <div class="card">
-              <img src="project2.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Android Application</h5>
-                <p class="card-text">First time i did android application in level-2, Semester-II. It was needed for academic puspose. It added some beautiful color in my coding life.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated more than 300 mins ago</small>
-              </div>
-            </div>
-            <div class="card">
-              <img src="project3.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">JavaScript Projects</h5>
-                <p class="card-text">I did some simple JavaScript projects also. They are much more simple and basic.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated more than 300 mins ago</small>
-              </div>
-            </div>
-          </div>
+      <div class="card">
+        <img src="project3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">JavaScript Projects</h5>
+          <p class="card-text">I did some simple JavaScript projects also. They are much more simple and basic.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated more than 300 mins ago</small>
+        </div>
       </div>
+    </div>
+  </div>
 
 
-      <!-- Education  -->
+  <!-- Education  -->
 
-      <div class="container" id="education">
-       
-        <div class="card">
-            <h5 class="card-header">Education</h5>
-            <div class="card-body">
-              <h5 class="card-title">Hajee Mohammad Danesh Science and Technology University, Dinajpur-5200. </h5>
-              <p class="card-text">B.Sc (Engineering) in Computer Science and Engineering (2018 - Present) </p>
-              <p class="card-text">CGPA : 3.71 ( out of 4.00 ) [ Up to 3rd Semester ]
+  <div class="container" id="education">
 
-
-              </p>
-
-              <h5 class="card-title">Govt. Science College, Tejgaon, Dhaka-1215. </h5>
-              <p class="card-text">Higher Secondary Certificate ( Science, HSC 2017 )  </p>
-              <p class="card-text">GPA : 4.83 ( Out of 5.00 )  </p>
-
-              <h5 class="card-title">Bitghar Radha Nath High School, Nabinagar, Brahmanbaria. </h5>
-              <p class="card-text">Secondary School Certificate ( Science, SSC 2015)   </p>
-              <p class="card-text">GPA : 5 ( Out of 5.00 )  </p>
+    <div class="card">
+      <h5 class="card-header">Education</h5>
+      <div class="card-body">
+        <h5 class="card-title">Hajee Mohammad Danesh Science and Technology University, Dinajpur-5200. </h5>
+        <p class="card-text">B.Sc (Engineering) in Computer Science and Engineering (2018 - Present) </p>
+        <p class="card-text">CGPA : 3.71 ( out of 4.00 ) [ Up to 3rd Semester ]
 
 
-              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-          </div>
+        </p>
 
+        <h5 class="card-title">Govt. Science College, Tejgaon, Dhaka-1215. </h5>
+        <p class="card-text">Higher Secondary Certificate ( Science, HSC 2017 ) </p>
+        <p class="card-text">GPA : 4.83 ( Out of 5.00 ) </p>
+
+        <h5 class="card-title">Bitghar Radha Nath High School, Nabinagar, Brahmanbaria. </h5>
+        <p class="card-text">Secondary School Certificate ( Science, SSC 2015) </p>
+        <p class="card-text">GPA : 5 ( Out of 5.00 ) </p>
+
+
+        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
       </div>
+    </div>
+
+  </div>
 
 
-      <!-- Coding and Typing skill  -->
-      <div class="container">
-       
-        <div class="card">
-            <h5 class="card-header">Coding and Other Skills: </h5>
-            <div class="card-body">
-              <h5 class="card-title">Solved more than 2000+ problems in many online judges. </h5>
-              <p class="card-text">Codeforces: <a href=""> ASIF_-_ASHIK</a>, total solve : 1150+, max rating : 1615 (expert)
-                <br> UVA: <a href="">Ashikur Rahman Bhuyain </a>, total solve : 400+
-                 <br> HackerRank : <a href="">ASIF_HSTU_18</a> , total solve : 200+ 
-              </p>
+  <!-- Coding and Typing skill  -->
+  <div class="container">
+
+    <div class="card">
+      <h5 class="card-header">Coding and Other Skills: </h5>
+      <div class="card-body">
+        <h5 class="card-title">Solved more than 2500+ problems in many online judges. </h5>
+        <p class="card-text">Codeforces: <a href="https://codeforces.com/profile/asif_-_ashik" target="_blank">
+            ASIF_-_ASHIK</a>, total
+          solve : 1450+, max rating : 1665 (expert)
+          <br> UVA: <a href="https://uhunt.onlinejudge.org/id/952136" target="_blank">Ashikur Rahman Bhuyain </a>, total
+          solve : 400+
+          <br> HackerRank : <a href="https://www.hackerrank.com/ASIF_HSTU_18" target="_blank">ASIF_HSTU_18</a> , total
+          solve : 200+
+        </p>
 
 
 
-              </p>
+        </p>
 
-              <h5 class="card-title">Typing Speed : 50-55 wpm </h5>
-              <p class="card-text">Typeracer : <a href="https://data.typeracer.com/pit/profile?user=asif_hstu_18">asif_hstu_18</a>, WPM: 56, Skill Level: Typemaster  </p>
-           
+        <h5 class="card-title">Typing Speed : 55-60 wpm </h5>
+        <p class="card-text">Typeracer : <a href="https://data.typeracer.com/pit/profile?user=asif_hstu_18"
+            target="_blank">asif_hstu_18</a>, WPM: 56, Skill Level:
+          Typemaster </p>
 
-       
 
 
-              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-          </div>
 
+
+        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
       </div>
+    </div>
 
- 
-      <!-- Onsite Contests and Math Olympiad -->
-      <div class="container">
-       
-        <div class="card">
-            <h5 class="card-header"> ONSITE CONTEST AND OLYMPIAD PARTICIPATION: </h5>
-            <div class="card-body">
+  </div>
 
-            
-                <h5 class="card-title">The ICPC 2020 Asia Dhaka Regional. </h5>
-                 <p class="card-text">Rank: 49, (Rangpur Division Champion)</p>
 
-                <h5 class="card-title">The MIST NCPC 2020. 
-                  </h5>
-                  <p class="card-text">Rank: 72</p>
+  <!-- Onsite Contests and Math Olympiad -->
+  <div class="container">
 
-                
-                  <h5 class="card-title">Inter University Programming Contest(IUPC): 
-                  </h5>
-                  <p class="card-text">KUET IUPC-2019</p>
-                  <p class="card-text">RUET IUPC -2019</p>
-                   <p class="card-text">GUB IUPC -2018</p>
-  
-                <h5 class="card-title">Mathematics Olympiad : 
-                  </h5>
-                  <p class="card-text">Participant of 10th National Undergraduate Mathematics Olympiad-2018
-                  </p>
-                  <p class="card-text">Participant of 12th National Undergraduate Mathematics Olympiad-2021
-                  </p>
-                  
-              
+    <div class="card">
+      <h5 class="card-header"> ONSITE CONTEST AND OLYMPIAD PARTICIPATION: </h5>
+      <div class="card-body">
 
-                 
-              
-             
 
-              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-          </div>
+        <h5 class="card-title">The ICPC 2020 Asia Dhaka Regional. </h5>
+        <p class="card-text">Rank: 47, (Rangpur Division Champion)</p>
 
+        <h5 class="card-title">The MIST NCPC 2020.
+        </h5>
+        <p class="card-text">Rank: 72</p>
+
+
+        <h5 class="card-title">Inter University Programming Contest(IUPC):
+        </h5>
+        <p class="card-text">KUET IUPC-2019</p>
+        <p class="card-text">RUET IUPC -2019</p>
+        <p class="card-text">GUB IUPC -2018</p>
+
+        <h5 class="card-title">Mathematics Olympiad :
+        </h5>
+        <p class="card-text">Participant of 10th National Undergraduate Mathematics Olympiad-2018
+        </p>
+        <p class="card-text">Participant of 12th National Undergraduate Mathematics Olympiad-2021
+        </p>
+
+
+
+
+
+
+
+        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
       </div>
+    </div>
+
+  </div>
 
 
-      <!-- Extra curriculum -->
-      <div class="container">
-       
-        <div class="card">
-            <h5 class="card-header">Extra curriculum</h5>
-            <div class="card-body">
-              <h5 class="card-title">Office Secretary at Programmers Arena, HSTU</h5>
-              <p class="card-text">since Dec 2019 - Present.</p>
+  <!-- Extra curriculum -->
+  <div class="container">
 
-              <h5 class="card-title">Event Coordinator at "Bangladesh Olympiad in Informatics
-                (BdOI) 2020"
-                </h5>
-              <p class="card-text">Dinajpur Division Round </p>
+    <div class="card">
+      <h5 class="card-header">Extra curriculum</h5>
+      <div class="card-body">
 
-              <h5 class="card-title">Former Cadet at Bangladesh National Cadet Corps(BNCC)
-                </h5>
-              <p class="card-text">GSC platoon under '1' Ramna
-                Battalion, Ramna Regiment, Eco Company, Bangladesh
-                Army wing. (2015-2016) </p>
+        <h5 class="card-title">Organizing Secretary at Programmers Arena, HSTU</h5>
+        <p class="card-text">January 2022-present</p>
 
-              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-          </div>
+        <h5 class="card-title">Former Office Secretary at Programmers Arena, HSTU</h5>
+        <p class="card-text">since Dec 2019 - January 2022.</p>
 
+        <h5 class="card-title">Event Coordinator at "Bangladesh Olympiad in Informatics
+          (BdOI) 2020"
+        </h5>
+        <p class="card-text">Dinajpur Division Round </p>
+
+        <h5 class="card-title">Former Cadet at Bangladesh National Cadet Corps(BNCC)
+        </h5>
+        <p class="card-text">GSC platoon under '1' Ramna
+          Battalion, Ramna Regiment, Eco Company, Bangladesh
+          Army wing. (2015-2016) </p>
+
+        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
       </div>
+    </div>
+
+  </div>
 
 
 
-       <!-- Footer Section  -->
+  <!-- Footer Section  -->
 
 
-       <footer class="bg-primary text-white text-center text-lg-start navbar-dark bg-dark" id="contact">
-        <!-- Grid container -->
-        <div class="container p-4">
-          <!--Grid row-->
-          <div class="row">
-            <!--Grid column-->
-            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Contact Info : </h5>
-      
-              <p>
-                Name : Ashikur Rahman Bhuyain <br>
-                Cell: +8801704616560 <br>
-                Email: ashik.cse.hstu@gmail.com 
-                <br>
-                 Address: Bitghar-3417, Nabinagar,Brahmanbaria Chittagong
-               <br>
-                 Social Media Links : 
-                    <a href="https://www.facebook.com/asif.gsc/" >Facebook</a>, 
-                    <a href="https://www.linkedin.com/in/asif-ashik/">linkedin</a>
-              </p>
-            </div>
-            <!--Grid column-->
-      
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <!-- <h5 class="text-uppercase">Links</h5> -->
-      
-              <!-- <ul class="list-unstyled mb-0">
+  <footer class="bg-primary text-white text-center text-lg-start navbar-dark bg-dark" id="contact">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Contact Info : </h5>
+
+          <p>
+            Name : Ashikur Rahman Bhuyain <br>
+            Cell: +8801704616560 <br>
+            Email: ashik.cse.hstu@gmail.com
+            <br>
+            Address: Bitghar-3417, Nabinagar,Brahmanbaria Chittagong
+            <br>
+            Social Media Links :
+            <a href="https://www.facebook.com/asif.gsc/" target="_blank">Facebook</a>,
+            <a href="https://www.linkedin.com/in/asif-ashik/" target="_blank">linkedin</a>
+          </p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <!-- <h5 class="text-uppercase">Links</h5> -->
+
+          <!-- <ul class="list-unstyled mb-0">
                 <li>
                   <a href="#!" class="text-white">Link 1</a>
                 </li>
@@ -363,12 +390,12 @@
                   <a href="#!" class="text-white">Link 4</a>
                 </li>
               </ul> -->
-            </div>
-            <!--Grid column-->
-      
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <!-- <h5 class="text-uppercase mb-0">Links</h5>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <!-- <h5 class="text-uppercase mb-0">Links</h5>
       
               
                 <li>
@@ -384,32 +411,35 @@
                   <a href="#!" class="text-white">Link 4</a>
                 </li>
               </ul> -->
-            </div>
-            <!--Grid column-->
-          </div>
-          <!--Grid row-->
         </div>
-        <!-- Grid container -->
-      
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2021 Copyright:
-          <a class="text-white" >Ashikur Rahman Bhuyain(Asif)</a>
-        </div>
-        <!-- Copyright -->
-      </footer>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="text-white">Ashikur Rahman Bhuyain(Asif)</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
 
 
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>
