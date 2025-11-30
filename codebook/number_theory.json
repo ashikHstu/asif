@@ -1,0 +1,32 @@
+{
+  "GCD": {
+    "time": "O(log n)",
+    "space": "O(1)",
+    "desc": "Compute GCD using the Euclidean algorithm.",
+    "code": "#include <bits/stdc++.h>\nusing namespace std;\nlong long gcd(long long a, long long b){ while(b){ long long t=b; b=a%b; a=t;} return a; }\nint main(){ cout<<gcd(48,18); }"
+  },
+  "LCM": {
+    "time": "O(log n)",
+    "space": "O(1)",
+    "desc": "Compute LCM using GCD.",
+    "code": "#include <bits/stdc++.h>\nusing namespace std;\nlong long gcd(long long a,long long b){ while(b){ long long t=b; b=a%b; a=t;} return a; }\nlong long lcm(long long a,long long b){ return a/gcd(a,b)*b; }\nint main(){ cout<<lcm(12,18); }"
+  },
+  "Sieve of Eratosthenes": {
+    "time": "O(n log log n)",
+    "space": "O(n)",
+    "desc": "Generate all primes up to n.",
+    "code": "#include <bits/stdc++.h>\nusing namespace std;\nvector<bool> sieve(int n){ vector<bool> p(n+1,true); p[0]=p[1]=false;\n for(int i=2;i*i<=n;i++) if(p[i]) for(int j=i*i;j<=n;j+=i) p[j]=false; return p; }\nint main(){ auto v=sieve(100); }"
+  },
+  "Euler Totient (Phi)": {
+    "time": "O(sqrt(n))",
+    "space": "O(1)",
+    "desc": "Calculates number of integers ≤ n that are coprime with n.",
+    "code": "#include <bits/stdc++.h>\nusing namespace std;\nlong long phi(long long n){ long long res = n;\n for(long long i=2;i*i<=n;i++) if(n%i==0){ while(n%i==0) n/=i; res -= res/i; }\n if(n>1) res -= res/n; return res; }\nint main(){ cout<<phi(36); }"
+  },
+  "Divisor Count": {
+    "time": "O(sqrt(n))",
+    "space": "O(1)",
+    "desc": "Count number of divisors of n.",
+    "code": "#include <bits/stdc++.h>\nusing namespace std;\nint divisorCount(long long n){ int c=0; for(long long i=1;i*i<=n;i++){ if(n%i==0){ c += (i*i==n?1:2); } } return c; }\nint main(){ cout<<divisorCount(36); }"
+  }
+}

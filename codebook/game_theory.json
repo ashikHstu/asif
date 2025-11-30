@@ -1,0 +1,8 @@
+{
+  "Nim Game": {
+    "time": "O(n)",
+    "space": "O(1)",
+    "desc": "Winning condition for Nim game using xor.",
+    "code": "#include <bits/stdc++.h>\nusing namespace std;\nbool nim(vector<int>& a){ int x=0; for(int v:a) x^=v; return x!=0; }\nint main(){ vector<int>a={1,4,5}; cout<<nim(a);} "
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Stack": {
+    "time": "O(1)",
+    "space": "O(n)",
+    "desc": "Simple stack using vector.",
+    "code": "#include <bits/stdc++.h>\nusing namespace std;\nstruct Stack{ vector<int> st;\n void push(int x){ st.push_back(x);} int pop(){ int x=st.back(); st.pop_back(); return x; }\n int top(){ return st.back(); }};\nint main(){ Stack s; s.push(10); }"
+  },
+  "Queue": {
+    "time": "O(1)",
+    "space": "O(n)",
+    "desc": "Standard queue using deque.",
+    "code": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){ deque<int> q; q.push_back(1); cout<<q.front(); }"
+  },
+  "Binary Heap": {
+    "time": "O(log n)",
+    "space": "O(n)",
+    "desc": "Min-heap implementation.",
+    "code": "#include <bits/stdc++.h>\nusing namespace std;\nint main(){ priority_queue<int, vector<int>, greater<int>> pq; pq.push(3); }"
+  }
+}

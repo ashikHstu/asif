@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Algorithm Index Page</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+    header { background: #333; color: #fff; padding: 15px; text-align: center; font-size: 24px; }
+
+    #search-container { max-width: 900px; margin: 20px auto; padding: 10px; }
+    #search-box { width: 100%; padding: 12px; font-size: 16px; border-radius: 8px; border: 1px solid #aaa; }
+
+    #index { background: #fff; padding: 20px; max-width: 900px; margin: 20px auto; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
+    #index h2 { margin-top: 0; }
+    .chapter-item { padding: 10px 0; border-bottom: 1px solid #ccc; }
+    .chapter-item a { color: #0077cc; text-decoration: none; font-size: 18px; }
+
+    details { background: #fff; padding: 15px; margin: 20px auto; max-width: 900px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
+    summary { font-size: 20px; cursor: pointer; font-weight: bold; }
+
+    .subsection { margin-top: 15px; padding: 15px; background: #fafafa; border-left: 4px solid #0077cc; border-radius: 4px; }
+    .code-block { margin-top: 10px; padding: 15px; background: #eee; border-radius: 6px; white-space: pre-wrap; font-family: Consolas, monospace; }
+  </style>
+</head>
+<body>
+<header>Algorithm Library</header>
+
+<div id="search-container">
+  <input type="text" id="search-box" placeholder="Search algorithms (e.g., GCD, BFS, Kadane)...">
+</div>
+
+<section id="index">
+  <h2>Index</h2>
+  <div id="index-list"></div>
+</section>
+
+<div id="content"></div>
+
+<script>
+  const chapterFiles = {
+    "Number Theory": "number_theory.json",
+    "Graph": "graph.json",
+    "Data Structure": "data_structure.json",
+    "String": "string.json",
+    "Dynamic Programming": "dp.json",
+    "Game Theory": "game_theory.json",
+    "Segment Tree": "segment_tree.json",
+    "Advanced Array": "advance_array.json"
+  };
+
+  function generateIndex() {
+    const indexDiv = document.getElementById("index-list");
+    for (let chapter in chapterFiles) {
+      const div = document.createElement("div");
+      div.className = "chapter-item";
+      div.innerHTML = `<a href="#${chapter.replace(/ /g,'-')}">${chapter}</a>`;
+      indexDiv.appendChild(div);
+    }
+  }
+
+  async function generateContent() {
+    const content = document.getElementById("content");
+
+    for (let chapter in chapterFiles) {
+      const file = chapterFiles[chapter];
+      const res = await fetch(file);
+      const data = await res.json();
+
+      const details = document.createElement("details");
+      details.id = chapter.replace(/ /g, '-');
+      const summary = document.createElement("summary");
+      summary.textContent = chapter;
+      details.appendChild(summary);
+
+      for (let sub in data) {
+        const item = data[sub];
+        const div = document.createElement("div");
+        div.className = "subsection";
+        div.innerHTML = `<b>${sub}</b><br>
+                         <b>Time Complexity:</b> ${item.time}<br>
+                         <b>Space Complexity:</b> ${item.space}<br>
+                         <b>Description:</b> ${item.desc}
+                         <div class='code-block'>${item.code}</div>`;
+        details.appendChild(div);
+      }
+
+      content.appendChild(details);
+    }
+  }
+
+  function search() {
+    const q = document.getElementById("search-box").value.toLowerCase();
+    const sections = document.querySelectorAll(".subsection");
+    sections.forEach(sec => {
+      sec.style.display = sec.innerText.toLowerCase().includes(q) ? "block" : "none";
+    });
+  }
+
+  document.getElementById("search-box").addEventListener("input", search);
+
+  generateIndex();
+  generateContent();
+</script>
+</body>
+</html>

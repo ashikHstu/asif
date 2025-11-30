@@ -1,0 +1,14 @@
+{
+  "Palindrome Check": {
+    "time": "O(n)",
+    "space": "O(1)",
+    "desc": "Checks whether a string is palindrome.",
+    "code": "#include <bits/stdc++.h>\nusing namespace std;\nbool isPalindrome(string s){ int l=0,r=s.size()-1;\n while(l<r) if(s[l++]!=s[r--]) return false; return true; }\nint main(){ cout<<isPalindrome(\"abba\"); }"
+  },
+  "KMP": {
+    "time": "O(n + m)",
+    "space": "O(n)",
+    "desc": "Knuth-Morris-Pratt pattern matching.",
+    "code": "#include <bits/stdc++.h>\nusing namespace std;\nvector<int> lpsCalc(string p){ int n=p.size(); vector<int> lps(n);\n for(int i=1,len=0;i<n;){ if(p[i]==p[len]) lps[i++]=++len; else if(len) len=lps[len-1]; else lps[i++]=0; } return lps; }\nint main(){ auto v=lpsCalc(\"ababaca\"); }"
+  }
+}

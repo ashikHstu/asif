@@ -1,0 +1,20 @@
+{
+  "BFS": {
+    "time": "O(V + E)",
+    "space": "O(V)",
+    "desc": "Breadth-first search on graph.",
+    "code": "#include <bits/stdc++.h>\nusing namespace std;\nvoid bfs(int start, vector<vector<int>>& adj){ queue<int> q; q.push(start);\n vector<int> vis(adj.size()); vis[start]=1;\n while(!q.empty()){ int u=q.front(); q.pop();\n for(int v:adj[u]) if(!vis[v]) vis[v]=1, q.push(v); }}\nint main(){ vector<vector<int>> g={{1},{0,2},{1}}; bfs(0,g);} "
+  },
+  "DFS": {
+    "time": "O(V + E)",
+    "space": "O(V)",
+    "desc": "Depth-first search (recursive).",
+    "code": "#include <bits/stdc++.h>\nusing namespace std;\nvoid dfs(int u, vector<vector<int>>& adj, vector<int>& vis){ vis[u]=1;\n for(int v:adj[u]) if(!vis[v]) dfs(v,adj,vis);} \nint main(){ vector<vector<int>> g={{1},{0,2},{1}}; vector<int> vis(3); dfs(0,g,vis);} "
+  },
+  "Dijkstra": {
+    "time": "O(E log V)",
+    "space": "O(V)",
+    "desc": "Shortest path using Dijkstra with priority queue.",
+    "code": "#include <bits/stdc++.h>\nusing namespace std;\nvector<long long> dijkstra(int n, int src, vector<vector<pair<int,int>>>& g){\n vector<long long> dist(n,1e18);\n priority_queue<pair<long long,int>, vector<pair<long long,int>>, greater<>> pq;\n dist[src]=0; pq.push({0,src});\n while(!pq.empty()){\n auto [d,u]=pq.top(); pq.pop(); if(d!=dist[u]) continue;\n for(auto [v,w]:g[u]) if(dist[v]>d+w){ dist[v]=d+w; pq.push({dist[v],v}); }}\n return dist; }\nint main(){ }"
+  }
+}

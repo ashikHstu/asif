@@ -1,0 +1,8 @@
+{
+  "Segment Tree (Range Sum)": {
+    "time": "O(n)",
+    "space": "O(n)",
+    "desc": "Build + query sum segment tree.",
+    "code": "#include <bits/stdc++.h>\nusing namespace std;\nstruct SegTree{ int n; vector<long long> tree;\n SegTree(vector<long long>& a){ n=a.size(); tree.assign(4*n,0); build(a,1,0,n-1);} \n long long build(vector<long long>&a,int idx,int l,int r){ if(l==r) return tree[idx]=a[l];\n int m=(l+r)/2; return tree[idx]=build(a,idx*2,l,m)+build(a,idx*2+1,m+1,r);} };\nint main(){ vector<long long>a={1,2,3}; SegTree t(a);} "
+  }
+}
